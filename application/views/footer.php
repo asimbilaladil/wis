@@ -57,10 +57,7 @@
 
 							<!-- copyright -->
 							<div class="copyright">
-								<a href="<?php echo base_url() ?>">
-									<img src="<?php echo base_url() ?>includes/images/kallyas-logo.svg" >
-								</a>
-								<p>© 2018 All rights reserved.</p>
+								
 							</div>
 							<!--/ copyright -->
 						</div>
@@ -171,7 +168,7 @@
 
 		document.getElementById('cityMapId').src = imagePath;
 		document.getElementById('mapDescriptionId').innerHTML = description; 
-		
+
 	}
 
 

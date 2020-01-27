@@ -26,13 +26,13 @@
                                             <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                               <select name ="category" class="form-control" id="sel1">
                                                 <option>cafe</option>
-                                                <option>bar</option>
+                                                <option>bars</option>
                                                 <option>pub</option>
-                                                <option>german food</option>
-                                                <option>hostels</option>
+                                                <option>germanfood</option>
+                                                <option>hostel</option>
                                                 <option>hotel</option>
-                                                <option>department store</option>
-                                                <option>shopping center</option>
+                                                <option>stores</option>
+                                                <option>ShoppingMall</option>
                                               </select>
                                         </div>
 
