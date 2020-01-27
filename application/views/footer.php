@@ -114,25 +114,68 @@
 				nope : '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js'
 			}
 		]);
-      var rangeSlider = function(){
-          var slider = $('.range-slider'),
-              range = $('.range-slider__range'),
-              value = $('.range-slider__value');
+    //   var rangeSlider = function(){
+    //       var slider = $('.range-slider'),
+    //           range = $('.range-slider__range'),
+    //           value = $('.range-slider__value');
 
-          slider.each(function(){
+    //       slider.each(function(){
 
-              value.each(function(){
-                  var value = $(this).prev().attr('value');
-                  $(this).html(value);
-              });
+    //           value.each(function(){
+    //               var value = $(this).prev().attr('value');
+    //               $(this).html(value);
+    //           });
 
-              range.on('input', function(){
-                  $(this).next(value).html(this.value);
-              });
-          });
-      };
+    //           range.on('input', function(){
+    //               $(this).next(value).html(this.value);
+    //           });
+    //       });
+    //   };
 
-      rangeSlider();
+	 // rangeSlider();
+
+	 
+
+	function searchOnClick() {
+		
+		var val1 = document.getElementById("set1").value;
+		var val2 = document.getElementById("set2").value;
+
+		var imagePath = '<?php echo base_url("includes/images/") ?>';
+		var description;
+
+		if (val1 == 1 && val2 == 2) {
+			imagePath = imagePath + 'Bahnhof_Kiel_to_Citti_Park.png';
+			description = '<li>Bahnhof Kiel</li><li>Andreas</li><li>Rathausplatz</li><li>IKEA</li><li>Citti Park</li>';
+
+
+		} else if (val1 == 1 && val2 == 3) {
+			imagePath = imagePath + 'Bahnhof_Kiel_to_Botanical_Garden.png';
+			description = '<ul> <li>Bahnhof Kiel</li><li>Rathausplatz</li><li>Ostseekai</li><li>GEOMAR</li><li>Botanical Garden</li> </ul>';
+		} else if (val1 == 2 && val2 == 1) {
+			description = ' <ul> <li>Citti Park</li><li>IKEA</li><li>Rathausplatz</li><li>Andreas</li><li>Bahnhof Kiel</li> </ul> ';
+		} else if (val1 == 2 && val2 == 3) {
+			imagePath = imagePath + 'Citti_Park_to_Botan_Garden.png';
+			description = ' <ul> <li>Citti Park</li><li>Andreas</li><li>GEOMAR</li><li>University of Kiel</li><li>Botanical Garden</li> </ul> ';
+		} else if (val1 == 3 && val2 == 1) {
+			imagePath = imagePath + 'Botanical_Garden_to_Bahnhof_Kiel.png';
+			description = ' <ul> <li>Botanical Garden</li><li>GEOMAR</li><li>Andreas</li><li>Sophienblatt 29</li><li>Bahnhof Kiel</li> </ul> ';
+		} else if (val1 == 3 && val2 == 2) {
+			imagePath = imagePath + 'Botanical_Garden_to_Citti_Park.png';
+			description = ' <ul> <li>Botanical Garden</li><li>University of Kiel</li><li>GEOMAR</li><li>Andreas</li><li>Citti Park</li> </ul> ';
+		} else {
+			imagePath = '';
+			description = '';
+		}
+
+		document.getElementById('cityMapId').src = imagePath;
+		document.getElementById('mapDescriptionId').innerHTML = description; 
+
+		console.log(val1);
+		console.log(val2);
+	}
+
+
 	</script>
 
 
