@@ -19,11 +19,12 @@ class Home extends CI_Controller {
 
    public function search($cat) {
 
-
+      //var_dump($cat);
          $result['result'] = $this->AdminModel->getAllfromTableByCat($cat);
 
       $this->load->view('header');
-
+     // var_dump($result);
+      //die();
       $this->load->view('list', $result);
       $this->load->view('footer');
    }
@@ -60,6 +61,14 @@ class Home extends CI_Controller {
 
       $this->load->view('header');
       $this->load->view('explore');
-      $this->load->view('footer');
+     $this->load->view('footer');
    }
+
+
+   public function explore_map() {
+
+      //      $this->load->view('header');
+            $this->load->view('explore-map');
+        //   $this->load->view('footer');
+         }   
 }
