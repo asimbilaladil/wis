@@ -25,14 +25,14 @@
                                         <div class="input-group col-md-4">
                                             <div class="input-group-addon"><i class="fa fa-user"></i></div>
                                               <select name ="category" class="form-control" id="sel1">
-                                                <option>Cafe</option>
-                                                <option>Bar</option>
-                                                <option>Pub</option>
-                                                <option>German Food</option>
-                                                <option>Hostels</option>
-                                                <option>Hotel</option>
-                                                <option>Department Store</option>
-                                                <option>Shopping Center</option>
+                                                <option>cafe</option>
+                                                <option>bar</option>
+                                                <option>pub</option>
+                                                <option>german food</option>
+                                                <option>hostels</option>
+                                                <option>hotel</option>
+                                                <option>department store</option>
+                                                <option>shopping center</option>
                                               </select>
                                         </div>
 
