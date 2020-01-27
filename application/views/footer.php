@@ -153,6 +153,7 @@
 			imagePath = imagePath + 'Bahnhof_Kiel_to_Botanical_Garden.png';
 			description = '<ul> <li>Bahnhof Kiel</li><li>Rathausplatz</li><li>Ostseekai</li><li>GEOMAR</li><li>Botanical Garden</li> </ul>';
 		} else if (val1 == 2 && val2 == 1) {
+			imagePath = imagePath + 'Citti_Park_to_Bahnhof_Kiel.png';
 			description = ' <ul> <li>Citti Park</li><li>IKEA</li><li>Rathausplatz</li><li>Andreas</li><li>Bahnhof Kiel</li> </ul> ';
 		} else if (val1 == 2 && val2 == 3) {
 			imagePath = imagePath + 'Citti_Park_to_Botan_Garden.png';
@@ -170,9 +171,7 @@
 
 		document.getElementById('cityMapId').src = imagePath;
 		document.getElementById('mapDescriptionId').innerHTML = description; 
-
-		console.log(val1);
-		console.log(val2);
+		
 	}
 
 
