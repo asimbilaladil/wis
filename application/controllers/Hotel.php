@@ -69,8 +69,9 @@ class Hotel extends CI_Controller {
                redirect('Hotel');
 
            } else {
-              echo $error = array('error' => $this->upload->display_errors());
-            }
+              $error = array('error' => $this->upload->display_errors());
+              print_r($error); 
+           }
 
         }
 
