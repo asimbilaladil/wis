@@ -49,7 +49,7 @@
    <div class="container">
       <div class="row">
          <!-- Content with right sidebar -->
-      <iframe style="width: 100%; height: 500px" src="../../qgis2web_2020_01_26-20_08_28_547116/index.html"
+      <iframe style="width: 100%; height: 500px " frameBorder="0"   src="<?php echo site_url('home/explore_map'); ?>"
       ></iframe>
          <!-- .summary -->
       </div>
