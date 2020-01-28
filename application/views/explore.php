@@ -58,6 +58,7 @@
                <option value = '3'>Botanical Garden</option>
               
             </select>
+            <br><br>
              <button onclick='searchOnClick()' class="btn btn-primary" id="search-button">
                Search
             </button>
