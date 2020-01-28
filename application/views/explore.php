@@ -58,6 +58,9 @@
                <option value = '3'>Botanical Garden</option>
               
             </select>
+             <button onclick='searchOnClick()' class="btn btn-primary" id="search-button">
+               Search
+            </button>
          </div>
 
          <div class="form-group col-sm-3">
@@ -71,21 +74,14 @@
          </div> 
          <div class="form-group col-sm-6">
          
-            <img width='400' height='400' id='cityMapId' src=''> 
+            <img width='100%' height='400' id='cityMapId' src=''> 
          </div> 
   
          
         
          <!-- .summary -->
       </div>
-      <div class="row">
-      <div class="form-group col-sm-6">
-         
-         <button onclick='searchOnClick()' class="btn btn-primary" id="search-button">
-               Search
-            </button>
-         </div>
-</div>
+ 
 
 <div class="row">
       <div class="form-group col-sm-12">
