@@ -72,6 +72,15 @@
                <option value = '3' >botanical Garden</option>
             </select>
             
+<div class="row">
+      <div class="form-group col-sm-12">
+         
+         <div>
+            <h4><b>Stops<b></h4>
+            <div id='mapDescriptionId'> </div>
+            </div>
+         </div>
+</div>
          </div> 
          <div class="form-group col-sm-6">
          
@@ -84,15 +93,6 @@
       </div>
  
 
-<div class="row">
-      <div class="form-group col-sm-12">
-         
-         <div>
-            <h4><b>Stops<b></h4>
-            <div id='mapDescriptionId'> </div>
-            </div>
-         </div>
-</div>
       <!--/ main-data col-sm-7 -->
    </div>
 
