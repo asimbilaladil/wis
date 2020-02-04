@@ -11,7 +11,7 @@ class Contact extends CI_Controller {
 	}
 	
 	public function email() {
-		die('hello');
+		
 		$subject = $this->input->post('subject');
 		$message = $this->input->post('message');
 		$email = $this->input->post('email');
