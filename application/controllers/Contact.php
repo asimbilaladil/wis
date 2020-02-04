@@ -11,20 +11,19 @@ class Contact extends CI_Controller {
 	}
 	
 	public function email() {
-		$headers = 'From: webmaster@example.com';
-		mail('lemember@gmail.com', 'subject', 'message', $headers);
-// 		$subject = $this->input->post('subject');
-// 		$message = $this->input->post('message');
-// 		$email = $this->input->post('email');
-// 		$fname = $this->input->post('fname');
-// 		$lname = $this->input->post('lname');
+
+		$subject = $this->input->post('subject');
+		$message = $this->input->post('message');
+		$email = $this->input->post('email');
+		$fname = $this->input->post('fname');
+		$lname = $this->input->post('lname');
 		
-// 		$this->load->library('email');
-// 		$this->email->from('moiz@gmail.com');
-// 		$this->email->to('lemember@gmail.com');
-// 		$this->email->subject('abc');
-// 		$this->email->message('abc');
-// 		$this->email->send();
-// 		die('hello');
+		$this->load->library('email');
+		$this->email->from('moiz@gmail.com');
+		$this->email->to('lemember@gmail.com');
+		$this->email->subject('abc');
+		$this->email->message('abc');
+		$this->email->send();
+		
 	}
 }
