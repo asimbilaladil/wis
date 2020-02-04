@@ -24,6 +24,7 @@ class Contact extends CI_Controller {
 		$this->email->subject('abc');
 		$this->email->message('abc');
 		$this->email->send();
+		redirect('Contact');
 		
 	}
 }
