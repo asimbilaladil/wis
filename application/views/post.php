@@ -82,12 +82,21 @@
 										<!-- Product title -->
 										<h2 class="product_title entry-title"><?php echo $result->name;?></h2>
 										<!-- Description -->
-                     <div>
+                     <div class="row">
+			     <div class="col-sm-6">
 											<h3>Address</h3>
 											<p class="desc kw-details-desc">
 
 											<?php echo $result->address;?>
 											</p>
+			     </div>
+			     <div class="col-sm-6">
+											<h3>Contact</h3>
+											<p class="desc kw-details-desc">
+
+											<?php echo $result->contact;?>
+											</p>
+			     </div>			     
 											<h3>Description</h3>
 											<p class="desc kw-details-desc">
 
