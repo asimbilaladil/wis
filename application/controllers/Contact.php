@@ -18,10 +18,11 @@ class Contact extends CI_Controller {
 		$lname = $this->input->post('lname');
 		
 		$this->load->library('email');
-		$this->email->from($email, $fname . ' ' . $lname);
+		$this->email->from('moiz@gmail.com');
 		$this->email->to('lemember@gmail.com');
-		$this->email->subject($subject);
-		$this->email->message($message);
+		$this->email->subject('abc');
+		$this->email->message('abc');
 		$this->email->send();
+		die('hello');
 	}
 }
