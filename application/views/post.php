@@ -96,12 +96,15 @@
 
 											<?php echo $result->contact;?>
 											</p>
-			     </div>			     
+			     </div>	
+			     <div class="col-sm-12">
+			     
 											<h3>Description</h3>
 											<p class="desc kw-details-desc">
 
 											<?php echo $result->description;?>
-											</p>			     
+											</p>
+			</div>
 										</div>
 										<!--/ Description -->
 
