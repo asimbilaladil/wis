@@ -73,7 +73,7 @@
                            <!-- Details -->
                            <div class="details kw-details fixclear">
                               <!-- Title -->
-                              <h2 class="kw-details-title"><b> <?php echo $value->name; ?><b></h2>
+                              <h2 class="kw-details-title"><b> <?php echo $value->name; ?></b></h2>
 
                               <!-- Description -->
                               <p class="desc kw-details-desc">
