@@ -19,7 +19,7 @@ class Contact extends CI_Controller {
 		
 		$this->load->library('email');
 		$this->email->from($email, $fname . ' ' . $lname);
-		$this->email->to('m.moazzam12@gmail.com');
+		$this->email->to('lemember@gmail.com');
 		$this->email->subject($subject);
 		$this->email->message($message);
 		$this->email->send();
