@@ -2,6 +2,7 @@
 		<!-- Contact form & details section -->
 		<section class="hg_section ptop-80 pbottom-80" style="margin-top: 200px">
 			<div class="container">
+				<form action="<?php echo site_url('Contact/email') ?>" method="post">
 				<div class="row">
 					<div class="col-md-9 col-sm-9">
 						<!-- Contact form -->
@@ -9,11 +10,11 @@
 							<form action="mailto:admin@holidaymaker.com" method="post" enctype="text/plain" class="contact_form row">
 								<div class="cf_response"></div>
 								<p class="col-sm-6 kl-fancy-form">
-									<input type="text" name="name" id="cf_name" class="form-control" placeholder="Please enter your first name" value="" tabindex="1" maxlength="35" required>
+									<input type="text" name="fname" id="cf_name" class="form-control" placeholder="Please enter your first name" value="" tabindex="1" maxlength="35" required>
 									<label class="control-label">FIRSTNAME</label>
 								</p>
 								<p class="col-sm-6 kl-fancy-form">
-									<input type="text" name="lastname" id="cf_lastname" class="form-control" placeholder="Please enter your first last name" value="" tabindex="1" maxlength="35" required>
+									<input type="text" name="lname" id="cf_lastname" class="form-control" placeholder="Please enter your first last name" value="" tabindex="1" maxlength="35" required>
 									<label class="control-label">LASTNAME</label>
 								</p>
 								<p class="col-sm-12 kl-fancy-form">
@@ -37,6 +38,7 @@
 						</div>
 						<!--/ Contact form -->
 					</div>
+					</form>
 					<!--/ col-md-9 col-sm-9 -->
 
 					<div class="col-md-3 col-sm-3">
