@@ -83,11 +83,16 @@
 										<h2 class="product_title entry-title"><?php echo $result->name;?></h2>
 										<!-- Description -->
                      <div>
-											<h3>Description</h3>
+											<h3>Address</h3>
 											<p class="desc kw-details-desc">
 
 											<?php echo $result->address;?>
 											</p>
+											<h3>Description</h3>
+											<p class="desc kw-details-desc">
+
+											<?php echo $result->description;?>
+											</p>			     
 										</div>
 										<!--/ Description -->
 
